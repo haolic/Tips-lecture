@@ -1,4 +1,4 @@
-# 分享一下[我所了解的ES6](https://github.com/haolic/ECMAScript6)^_^
+# 分享一下[我所了解的ES6/2015](https://github.com/haolic/ECMAScript6)^_^
 
 ---
 
