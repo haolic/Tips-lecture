@@ -284,6 +284,10 @@
        var str = date1 = data2;//str为时间戳的差.
        ```
 
+36. angular中ng-if和ng-show/hide的区别: ng-if是通过表达式的值为true或false来控制是否创建此dom节点, 而ng-show/hide是通过display来控制显示和不显示.
+
+37. parseInt()中存在第二个参数,parseInt(a,b);参数b来控制此方法通过2/8/10/16为基数(进制)对数字进行转换.
+
 ---
 
 以后会不定期更新.哈哈哈 .
