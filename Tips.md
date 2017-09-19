@@ -276,6 +276,14 @@
     1. Array.prototype.slice.call(arrayLike);//slice([a,[b]])方法返回值为数组.无参数返回整个数组,一个参数slice(a)返回从下标为a到最后的数组,两个参数slice(a,b) 返回从下标a到b且不包含下标为b的元素.
     2. Array.prototype.splice.call(arrayLike);//splice();方法返回值也为数组,但是会对原数组有影响. 例如splice(0)是从第0个下标的元素删除到最后一个元素,随后原数组中元素个数为空.splice(a,b)为从下标为a删除到下标为b,且不包含b.
 
+35. 两个日期对象相减,获得的是时间戳的差.
+
+    1. ```javascript
+       var date1 = new Date();
+       var date2 = new Date(2017, 1, 1, 12, 59, 59);
+       var str = date1 = data2;//str为时间戳的差.
+       ```
+
 ---
 
 以后会不定期更新.哈哈哈 .
