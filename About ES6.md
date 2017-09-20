@@ -25,4 +25,24 @@
       其中第一个参数是数组并且最后一个元素是空字符串'';
       ```
 
-4. ​
+4. Promise对象:
+
+   1. new Promise()需要传入一个函数, 注意:一旦new Promise()不但会创建一个Promise对象, 并且执行了传入的函数.
+
+      ```javascript
+      let p = new Promise(function (resolve, reject) { console.log('something') })//此处不仅创建了Promise对象, 并且执行了传入的函数.
+      ```
+
+   2. Promise.all():并行执行传入的每个函数
+
+      ```javascript
+      Promise.all([fun1(), fun2(), fun3()]).then(function(value){})//等待慢的, 当fun1/2/3都执行完之后才调用then的回调.并且value为一个数组,数组的元素是每个func中resolve传入的值.
+      ```
+
+   3. Promise.race():并行执行传入的每个函数
+
+      ```javascript
+      Promise.race([fun1(), fun2(), fun3()]).then(function(value){})//优先照顾快的, 当fun1/2/3任一个执行完成就调用then中的回调, value为最先执行完的函数的resolve传入的值.
+      ```
+
+      但执行then中的回调的同时并不会停止执行剩余未执行函数.
