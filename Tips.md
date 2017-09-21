@@ -288,9 +288,40 @@
 
 37. parseInt()中存在第二个参数,parseInt(a,b);参数b来控制此方法通过2/8/10/16为基数(进制)对数字进行转换.
 
-38. 国内外的大牛: 刘哇勇, 阮一峰, 白露飞
+38. 国内的大牛: 刘哇勇, 阮一峰, 白露飞
 
-    ​
+39. jquery获取元素宽高: 
+
+    1. 获取内容宽高:
+
+       ```javascript
+       width()/height()
+       ```
+
+    2. 获取包括内边距的元素宽高:
+
+       ```javascript
+       innerWidth()/innerHeight()
+       ```
+
+    3. 获取包括边框(border)的宽高:
+
+       ```javascript
+       outerWidth()/outerHeight()
+       ```
+
+    4. 获取元素实际盒图宽高:
+
+       ```javascript
+       outerWidth(true)/outerHeight(true)
+       ```
+
+       ​
+
+40. 判断一个变量是不是NaN: 
+
+    1. isNaN().
+    2. 让变量==自身.返回false说明是NaN,返回true说明不是NaN.
 
 ---
 
