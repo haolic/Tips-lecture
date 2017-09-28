@@ -1,8 +1,12 @@
 # 关于React.
 
-1. React声明周期:
+1. React生命周期:
 
-   1. Mounting: 
+   1. Mounting: 挂载阶段.
+
+      getDefaultProps 初始化属性;
+
+      getInitialState 初始化状态;
 
       componentWillMount 挂载之前的生命周期函数;
 
@@ -10,7 +14,7 @@
 
       componentDidMount 挂载完成的生命周期函数;
 
-   2. Updating:
+   2. Updating: 执行中阶段(更新阶段).
 
       componentWillReceiveProps 接收到新的props时的生命周期函数;
 
@@ -24,8 +28,11 @@
 
       componentWillUpdate 组件将要重新渲染的生命周期函数;
 
+      render 组件重新渲染;
+
       componentDidUpdate  组件重新渲染完成的生命周期函数;
 
-   3. Unmounting:
+   3. Unmounting: 卸载阶段.
 
       componentWillUnmount 组件卸载.
+

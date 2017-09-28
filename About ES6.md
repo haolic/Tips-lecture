@@ -46,3 +46,5 @@
       ```
 
       但执行then中的回调的同时并不会停止执行剩余未执行函数.
+
+5. Set()结构中, undefined/null/NaN/Infinity不会重复出现.
