@@ -36,3 +36,17 @@
 
       componentWillUnmount 组件卸载.
 
+2. 路由传值:
+
+   1. /page1/:name/:age/:sex
+
+      子路由用下面方式接数据.
+
+      this.props.params.name
+
+   2. /page1?name=wangsan&pwd=123
+
+      子路由用下面方式接数据.
+
+      this.props.location.query.name
+
